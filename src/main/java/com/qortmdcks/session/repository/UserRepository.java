@@ -15,7 +15,7 @@ import java.util.Optional;
 public class UserRepository {
     private List<UserDto> userList = new ArrayList<>(); // 1. 비어있는 공간 생성
 
-    public Optional<UserDto> findByName(String name){  // 3. 넘어온 데이터가 일치한지 확인하는 곳
+    public Optional<UserDto> findByName(String name){  // 3. 넘어온 데이터가 일치한지 확인
         return userList
                 .stream()
                 .filter(it -> {
